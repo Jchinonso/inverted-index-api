@@ -131,12 +131,10 @@ class invertedIndex {
 
     if (Object.keys(index).length === 0) {
       return { error: 'Index has not been created. Kindly create index before searching' };
-    }
-    else {
+    } else {
       if (Array.isArray(fileName)) {
         getSearchTerms.push(...fileName); // definitly the second arg is seachTerms
-      }
-      else {
+      } else {
         getSearchTerms.push(fileName); // definitly the second arg is fileName
       }
 
