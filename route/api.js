@@ -15,12 +15,10 @@ router.post('/api/create', (req, res) => {
     }
    if (req.file === undefined) {
       res.json({ error: 'Kindly upload a file' });
-    }
-    else {
+    } else {
       if (req.file.originalname.match('.json$') === null) {
         res.json({ error: 'Invalid file uploaded!' });
-      }
-      else {
+      } else {
         res.json(indexObj.createIndex(req.body.fileName, indexObj.readFile(req.file.filename)));
       }
       fs.unlinkSync(path.join('fixtures', req.file.filename)); // delete the uploaded file once the index is created
@@ -31,8 +29,7 @@ router.post('/api/create', (req, res) => {
 router.post('/api/search', search.single(), (req, res) => {
   if (req.body.fileName !== undefined) {
     res.json(indexObj.searchIndex(indexObj.index, req.body.fileName, req.body.searchTerms));
-  }
-  else {
+  } else {
     res.json(indexObj.searchIndex(indexObj.index, req.body.searchTerms));
   }
 });
