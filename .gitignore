@@ -3,3 +3,4 @@
 .env
 bash.exe.stackdump
 coverage
+dist
