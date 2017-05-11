@@ -1,5 +1,6 @@
-[![Coverage Status](https://coveralls.io/repos/github/Jchinonso/inverted-index-api/badge.svg?branch=server-side)](https://coveralls.io/github/Jchinonso/inverted-index-api?branch=server-side)
 [![Build Status](https://travis-ci.org/Jchinonso/inverted-index-api.svg?branch=master)](https://travis-ci.org/Jchinonso/inverted-index-api)
+
+
 
 
 # Inverted Index
