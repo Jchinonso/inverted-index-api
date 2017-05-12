@@ -1,21 +1,22 @@
 {
   "name": "inverted-index-api",
   "version": "0.0.1",
-  "description": "it simplifies search synonymous to elastic search",
+  "description": "an app that enables efficient searching",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "gulp run-tests",
+    "start": "gulp serve"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Jchinonso/inverted-index-api.git"
+    "url": "git+https://github.com/jchinonso/inverted-index-api.git"
   },
-  "author": "jchinonso",
+  "author": "noordean",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/Jchinonso/inverted-index-api/issues"
+    "url": "https://github.com/jchinonso/inverted-index-api/issues"
   },
-  "homepage": "https://github.com/Jchinonso/inverted-index-api#readme",
+  "homepage": "https://github.com/jchinonso/inverted-index-api#readme",
   "devDependencies": {
     "babel-cli": "^6.24.1",
     "eslint": "^3.19.0",
@@ -33,6 +34,7 @@
     "gulp": "^3.9.1",
     "gulp-babel": "^6.1.2",
     "gulp-coveralls": "^0.1.4",
+    "gulp-exit": "0.0.2",
     "gulp-istanbul": "^1.1.1",
     "gulp-jasmine": "^2.4.2",
     "gulp-nodemon": "^2.2.1",
